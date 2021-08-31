@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*ESTILOS GENERALES*/
+body{
+    background-image:url("../media/images/back_body.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1400px;
+    background-attachment: fixed;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: honeydew;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    @media (max-width: 756px){
+        font-size: 30px;
+    }
+
+}
+
+/*FIN ESTILOS GENERALES*/
+
+
+/*LOGO SUPERIOR Y NAV*/
+.alto{
+    height: 50px;
+    @media (min-width: 1000px) {height: 120px;}
+}
+.imgLogo1, .imgLogo2{
+    position: absolute;
+    transition: all 1.5s;
+    width: 13%;
+}
+.imgLogo2{
+    transform: translateX(80%);
+}
+
+.fixed{
+    position: fixed;
+}
+
+/*FIN LOGO SUPERIOR Y NAV*/
+
+/*HOME*/
+
+.imgHomeMagui{
+    width: 90%
+}
+
+
+h1{
+    font-family:'Archivo Black', sans-serif;
+    font-size: 65px;
+    color: red;
+    padding-top: 100px;
+    margin-bottom: 10%;
+    @media (max-width: 1200px){
+        font-size: 45px;
+        padding-top: 0;
+    }
+}
+
+.homeParrafo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    font-size: 20px;
+}
+
+/*FIN HOME*/
+
+/*ABOUT ME*/
+.imgAboutMe{
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+.aboutParrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+/*FIN ABOUT ME*/
+
+
+/*SERVICES*/
+
+.imgServices{
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    border: white solid 6px;
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
+
+.servParrafo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: grey;
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+/*FIN SERVICES*/
+
+/*REELS*/
+
+.videos{
+    width: 80%;
+}
+#audios{
+    margin-top: 5%;
+}
+.audio{
+    width: 80%;
+}
+
+/*REELS*/
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.imgSocialMedia{
+    width: 25px;
+}
