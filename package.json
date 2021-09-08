@@ -1,11 +1,22 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
+  "description": "Sitio para ofrecer servicios de locución y publicidad",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleresk/MaguiLocutora.git"
+  },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/aleresk/MaguiLocutora/issues"
+  },
+  "homepage": "https://github.com/aleresk/MaguiLocutora#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

@@ -1,0 +1,42 @@
+/*HOME*/
+
+.imgHomeMagui{
+    width: 90%;
+    animation-name: aparicion;
+    animation-duration: 1.5s;
+}
+
+@keyframes aparicion{
+    from{
+        transform:translateY(10%);
+        opacity: 0%;  
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+
+
+
+h1{
+    font-family:'Archivo Black', sans-serif;
+    font-size: 65px;
+    color: red;
+    padding-top: 100px;
+    margin-bottom: 10%;
+    @media (max-width: 1200px){
+        font-size: 45px;
+        padding-top: 0;
+    }
+}
+
+.homeParrafo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: 20px;
+}
+
+/*FIN HOME*/

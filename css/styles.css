@@ -5,6 +5,7 @@
 
 /*ESTILOS GENERALES*/
 body {
+  background-color: black;
   background-image: url("../media/images/back_body.png");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -16,13 +17,18 @@ h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 45px;
   color: honeydew;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 @media (max-width: 756px) {
   h2 {
     font-size: 30px;
   }
+}
+
+.margenSeccion {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 /*FIN ESTILOS GENERALES*/
@@ -38,14 +44,23 @@ h2 {
 
 .imgLogo1, .imgLogo2 {
   position: absolute;
-  transition: all 1.5s;
-  width: 13%;
+  width: 10%;
 }
 
 .imgLogo2 {
-  transform: translateX(80%);
+  margin-left: 8%;
+  animation-name: logo;
+  animation-duration: 1.5s;
 }
 
+@keyframes logo {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .fixed {
   position: fixed;
 }
@@ -54,8 +69,20 @@ h2 {
 /*HOME*/
 .imgHomeMagui {
   width: 90%;
+  animation-name: aparicion;
+  animation-duration: 1.5s;
 }
 
+@keyframes aparicion {
+  from {
+    transform: translateY(10%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
 h1 {
   font-family: "Archivo Black", sans-serif;
   font-size: 65px;
@@ -72,7 +99,7 @@ h1 {
 
 .homeParrafo {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: grey;
+  color: white;
   font-size: 20px;
 }
 
@@ -85,7 +112,7 @@ h1 {
 
 .aboutParrafo {
   font-family: Arial, Helvetica, sans-serif;
-  color: grey;
+  color: white;
 }
 
 /*FIN ABOUT ME*/
@@ -126,9 +153,24 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+    margin: auto;
+  }
+}
+
+.textFooter {
+  padding: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
 
 .imgSocialMedia {
   width: 25px;
 }
+
+/*FIN FOOTER*/
 
 /*# sourceMappingURL=styles.css.map */

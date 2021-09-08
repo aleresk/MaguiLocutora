@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*ESTILOS GENERALES*/
+body{
+    background-color: black;
+    background-image:url("../media/images/back_body.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 1400px;
+    background-attachment: fixed;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: honeydew;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    @media (max-width: 756px){
+        font-size: 30px;
+    }
+
+}
+
+.margenSeccion{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/*FIN ESTILOS GENERALES*/
